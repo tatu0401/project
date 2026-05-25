@@ -9,3 +9,13 @@ def main():
             n=int(float(value))
         else:
             print("Некорректный ввод, повторите попытку")
+
+    for i in range(n):
+        grade=None
+        while not isinstance(grade,float):
+            value=input(f"Введите оценку по предмету {i+1}: ")
+            if is_valid_number(value):
+                grade=float(value)
+            else:
+                print("Некорректный ввод, повторите попытку")
+            grades.append(grade)
