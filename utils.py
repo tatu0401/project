@@ -1,4 +1,4 @@
-def is_valid_number():
+def is_valid_number(value):
     try:
         float(value)
         return True
