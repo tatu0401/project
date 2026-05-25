@@ -1,4 +1,5 @@
 from utils import is_valid_number
+from app_logic import srznach
 def main():
     grades=[]
     n=None
@@ -19,3 +20,7 @@ def main():
             else:
                 print("Некорректный ввод, повторите попытку")
             grades.append(grade)
+
+    average=srznach(grades)
+    print(f"Средний балл: {average:.2f}")
+    
