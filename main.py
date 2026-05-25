@@ -23,4 +23,6 @@ def main():
 
     average=srznach(grades)
     print(f"Средний балл: {average:.2f}")
-    
+
+
+main()
